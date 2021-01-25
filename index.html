@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con canvas</title>
+  </head>
+  <body>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      canvas{
+        background-color: rgb(0, 0, 0);
+        margin: 25px auto;
+        display: block;
+      }
+      .cajita{
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 0;
+        background-color: aqua;
+      }
+      .cajita > h1{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+      }
+      .cajita > p{
+        text-align: center;
+        font-size: 20px;
+      }
+    
+    </style>
+    <div class="cajita">
+      <h1>Dibujo en canvas</h1>
+      <p>
+        Cuantas lineas quieres
+        <input type="text" id="texto_lineas">
+        <input type="button" value="A darle!" id="botoncito">
+      </p>
+      <canvas width="440" height="440" id="dibujito"></canvas>
+      <p>Asi queda tu dibujo</p>
+    </div>
+  <script src="dibujo.js"></script>
+
+
+</body></html>
